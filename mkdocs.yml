@@ -1,0 +1,26 @@
+site_name: 技術と理数のレビューノート
+site_url: https://example.com
+
+theme:
+  name: material
+  language: ja
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.indexes
+
+plugins:
+  - search:
+      lang: ja
+  - blog
+  - tags
+  - mkdocs-jupyter
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
